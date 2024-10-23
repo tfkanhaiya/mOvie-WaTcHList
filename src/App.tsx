@@ -9,7 +9,7 @@ export const MyContext = React.createContext<any>(null);
 
 function App() {
   const [watchlist, setWatchlist] = useLocalStorage("watchlist", []);
-  const API = { base: "https://www.omdbapi.com/", key: "d92f826d" };
+  const API = { base: "https://www.omdbapi.com/", key: "" };
 
   return (
     <MyContext.Provider value={{ watchlist, setWatchlist, API }}>
